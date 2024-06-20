@@ -211,7 +211,6 @@ button:focus {
   margin: 0 auto;
   padding: 97px 77px 65px;
   display: flex;
-  gap: 121px;
 }
 
 .footer__left_block {
@@ -239,6 +238,8 @@ button:focus {
 }
 
 .footer__right_block {
+  max-width: 750px;
+  margin-left: 14%;
   display: flex;
   flex-direction: column;
   gap: 32px;
