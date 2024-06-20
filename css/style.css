@@ -496,6 +496,7 @@ button:focus {
   }
 
   .footer__right_block {
+    margin-left: 0;
     gap: 16px;
   }
 
