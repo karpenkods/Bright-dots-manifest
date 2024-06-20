@@ -1,1 +1,2 @@
-# Bright-dots-manifest
+# Bright dots manifest
+
