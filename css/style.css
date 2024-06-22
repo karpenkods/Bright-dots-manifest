@@ -5,7 +5,7 @@
 
 html {
   font-family: "Inter", sans-serif;
-  color: #383838
+  color: #383838;
 }
 
 h1,
@@ -28,6 +28,10 @@ ul {
 
 *:focus {
   outline: none;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 button:focus {
@@ -63,9 +67,16 @@ button:focus {
   height: 35px;
 }
 
-.header__join:hover svg circle {
+.header__join:active svg circle {
   fill: #4a00e9;
   transition-duration: 0.3s;
+}
+
+@media (hover: hover) {
+  .header__join:hover svg circle {
+    fill: #4a00e9;
+    transition-duration: 0.3s;
+  }
 }
 
 .main {
@@ -272,7 +283,7 @@ button:focus {
 .footer__right_block_last {
   display: flex;
   gap: 12px;
-  align-items: flex-end;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -283,17 +294,38 @@ button:focus {
   transition-duration: 0.3s;
 }
 
-.footer__right_link:hover {
+.footer__right_link:active {
   color: #4a00e9;
+}
+
+@media (hover: hover) {
+  .footer__right_link:hover {
+    color: #4a00e9;
+  }
 }
 
 .footer__right_link:visited {
   color: #ff0f00;
 }
 
-.footer__join:hover svg circle {
+.footer__join {
+  max-height: 30px;
+}
+
+.footer__join:active svg circle {
   fill: #4a00e9;
   transition-duration: 0.3s;
+}
+
+@media (hover: hover) {
+  .footer__join:hover svg circle {
+    fill: #4a00e9;
+    transition-duration: 0.3s;
+  }
+}
+
+.dot__black_wrap {
+  white-space: nowrap;
 }
 
 .dot__black {
@@ -320,7 +352,6 @@ button:focus {
   .footer__right_link {
     font-size: 32px;
   }
-
 }
 
 @media screen and (max-width: 1296px) {
@@ -431,6 +462,22 @@ button:focus {
     gap: 0;
     justify-content: space-between;
   }
+
+  .footer__right_text {
+    margin-right: 8px;
+  }
+
+  .footer__right_link {
+    margin-right: 8px;
+  }
+
+  .footer__right_block_last {
+    gap: 0;
+  }
+
+  .footer__join {
+    max-height: 35px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -510,10 +557,6 @@ button:focus {
     margin-bottom: 40px;
   }
 
-  .main__our_block {
-    gap: 8px;
-  }
-
   .main__our_header {
     font-size: 18px;
   }
@@ -577,6 +620,18 @@ button:focus {
     gap: 8px;
     align-items: center;
     margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .footer__join {
+    margin-top: 8px;
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 520px) {
+  .footer__join {
+    margin-top: 8px;
   }
 }
 
